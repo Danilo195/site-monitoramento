@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html> 
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+      <title>Operações - Bahia</title>
+      <link rel="stylesheet" href="./CSS/Estilo.css">
+      
+    <style type="text/css">
+      .hidden{
+          display:none;
+      }
+      input{
+          display:block;
+      }
+    </style>
+     <script>
+       function mostra(id) {
+       if  (document.getElementById(id).style.display =='none'){
+        document.getElementById(id).style.display = "block";
+       } else {document.getElementById(id).style.display ='none';}
+     }
+      </script>
+  </head>
+
+   <body>
+
+   <h1 style="background-color:darkblue;color:white;font-face:arial;font-size:40px;text-aling:center"/>
+   Monitoramento - Operações Bahia</h1>
+   <img Width="80%" height="20%" src="./Imagem/VELSIS principal.png" alt="Logo da VELSIS">
+  <div class="container">
+    
+    <a href=  "https://app.checkmob.com/Account/Login"><img width="420px" height="250px" 
+    src="./Imagem/Checkmob preto.png" alt="Logo do checkmob"> </a>
+    
+   <a href= "https://secure.logmein.com/central/Central.aspx"><img width="420px" height="220px" src="./Imagem/logmein.png" 
+    alt="Logo do Logmein">   </a> 
+    <br>
+   <a href= "http://servicedesk.velsis.com.br:81/"><img width="420px" height="220px" src="./Imagem/Help Desk.png" alt="logo dos chamados"></a>
+  </div>
+
+    <h5 style="background-color:darkblue;color:red;font-face:arial;font-size:30px;text-aling:center"/>Links para acesso RTM</font></h5>
+ 
+   <!-- Iniciando a estruturação dos links de acesso aos equipamentos -->
+
+   <h6> Equipamentos <input type="button" value= "Mostrar/Ocultar" onClick="mostra('ma')"/>
+         <div id="ma" class="hidden">
+   </h6> 
+
+         <a href=  "http://vpnvalive.velsis.com.br:18184/rtm/home"
+         target="_blank"><font size="4px">#Equipamento 001</font> </a>
+         <input type="button" value= "Mostrar/Ocultar" onClick="mostra('ma1')"/>
+         <div id="ma1" class="hidden">
+       <t1>
+          
+         <a href=  "http://vpnvalive.velsis.com.br:18184/rtm/loadSemaphoreMonitoring"
+         target="_blank"><font size="3px">1.1-Acesso a sincronismo do Semaforo</font> </a>
+         <br>
+          <a href=  "http://vpnvalive.velsis.com.br:18184/rtm/loadSemaphoreMonitoring"
+         target="_blank"><font size="3px">1.2-Acesso as infrações</font> </a>
+      </t1>
+
+   
+         <a href=  "http://vpnvalive.velsis.com.br:18184/rtm/home"
+         target="_blank"><font size="4px">#Equipamento 004</font> </a>
+         <input type="button" value= "Mostrar/Ocultar" onClick="mostra('ma2')"/>
+         <div id="ma2" class="hidden">
+       <t2>
+          
+         <a href=  "http://vpnvalive.velsis.com.br:18184/rtm/loadSemaphoreMonitoring"
+         target="_blank"><font size="3px">1.1-Acesso a sincronismo do Semaforo</font> </a>
+         <br>
+          <a href=  "http://vpnvalive.velsis.com.br:18184/rtm/loadSemaphoreMonitoring"
+         target="_blank"><font size="3px">1.2-Acesso as infrações</font> </a>
+      </t2>
+
+ <!-- Fim da estruturação de acesso aos equipamentos -->
+  </body>
+
+
+</html>
